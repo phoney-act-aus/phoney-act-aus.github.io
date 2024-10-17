@@ -1,0 +1,28 @@
+<html>
+  There is more yet to be found.
+  Other [phoney](https://www.acma.gov.au/phone-numbers-use-tv-shows-films-and-creative-works)s yet to be discovered.
+  
+  For your efforts:
+  
+  (qr shard image here)
+
+  <!-- This text is a red herring :3-->
+  <p id="obfuscated">a</p>
+
+  <script>
+    function randomCharText() {
+      let resultant = "";
+      for (let i = 0; i <= 100; i++) {
+        charCode = 27 + Math.floor(Math.random() * 100)
+        resultant += String.fromCharCode(charCode);
+      }
+    }
+    
+    function updateText() {
+      document.getElementById("obfuscated").innerHTML = "boo";
+      setTimeout(updateText, 0.1);
+    }
+    
+    updateText();
+  </script>
+</html>
